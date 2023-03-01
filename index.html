@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1320">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/jamie.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+    <!-- Link Swiper's CSS -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+    <script src="js/script.js"></script>
+    <title>jamie</title>
+</head>
+
+<body>
+
+    <!--상단헤더-->
+    <div id="header">
+        <h1><a href="javascript:return false;"><img src="images/logo.png" alt="logo"></a></h1>
+        <div id="menu">
+            <ul class="menuk">
+                <li><a href="javascript:return false;">LOG-IN</a></li>
+                <li><a href="javascript:return false;">｜</a></li>
+                <li><a href="javascript:return false;">JOIN</a></li>
+                <li><a href="javascript:return false;">｜</a></li>
+                <li><a href="javascript:return false;">MY PAGE</a></li>
+                <li><a href="javascript:return false;">｜</a></li>
+                <li><a href="javascript:return false;">CART</a></li>
+                <li><a href="https://www.youtube.com/"><img src="images/youtube.png" alt="youtube"></a></li>
+                <!--검색_기능-->
+
+            </ul>
+            <div id="look">
+                <div class="search"><input type="text" id="unumber" placeholder="" id="id"><img src="images/look.png"
+                        alt="look">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--상단헤더-->
+    <!--메뉴바-->
+    <div id="header_1">
+        <div id="header_1s">
+            <ul class="nav">
+                <li><a href="javascript:return false;">TOP</a>
+                    <ul class="sub">
+                        <li><a href="javascript:return false;">전체</a></li>
+                        <li><a href="javascript:return false;">나시</a></li>
+                        <li><a href="javascript:return false;">니트</a></li>
+                        <li><a href="javascript:return false;">맨투맨&후드</a></li>
+                        <li><a href="javascript:return false;">블라우스&셔츠</a></li>
+                        <li><a href="javascript:return false;">티셔츠</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:return false;">BOTTOM</a>
+                    <ul class="sub">
+                        <li><a href="javascript:return false;">전체</a></li>
+                        <li><a href="javascript:return false;">레깅스</a></li>
+                        <li><a href="javascript:return false;">스커트</a></li>
+                        <li><a href="javascript:return false;">슬랙스</a></li>
+                        <li><a href="javascript:return false;">팬츠</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:return false;">DRESS</a>
+                    <ul class="sub">
+                        <li><a href="javascript:return false;">전체</a></li>
+                        <li><a href="javascript:return false;">레이스</a></li>
+                        <li><a href="javascript:return false;">롱</a></li>
+                        <li><a href="javascript:return false;">미니</a></li>
+                        <li><a href="javascript:return false;">패턴</a></li>
+                        <li><a href="javascript:return false;">투피스</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:return false;">HOME WEAR</a>
+                    <ul class="sub">
+                        <li><a href="javascript:return false;">전체</a></li>
+                        <li><a href="javascript:return false;">잠옷</a></li>
+                        <li><a href="javascript:return false;">트레이닝</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:return false;">OUTER</a>
+                    <ul class="sub">
+                        <li><a href="javascript:return false;">전체</a></li>
+                        <li><a href="javascript:return false;">가디건</a></li>
+                        <li><a href="javascript:return false;">점퍼</a></li>
+                        <li><a href="javascript:return false;">자켓</a></li>
+                        <li><a href="javascript:return false;">코트</a></li>
+                        <li><a href="javascript:return false;">패딩</a></li>
+                        <li><a href="javascript:return false;">트렌치코트</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:return false;">SHOES/ACC</a>
+                    <ul class="sub">
+                        <li><a href="javascript:return false;">전체</a></li>
+                        <li><a href="javascript:return false;">가방</a></li>
+                        <li><a href="javascript:return false;">구두</a></li>
+                        <li><a href="javascript:return false;">모자&헤어</a></li>
+                        <li><a href="javascript:return false;">양말&스타킹</a></li>
+                        <li><a href="javascript:return false;">주얼리</a></li>
+                        <li><a href="javascript:return false;">패션용품</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="menu_ss">
+                <li><a href="javascript:return false;">공지사항</a></li>
+                <li><a href="javascript:return false;">QnA</a></li>
+                <li><a href="javascript:return false;">Event</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--메뉴바-->
+    <!--슬라이드 배너-->
+    <div id="banner">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/banner1.jpg" alt="banner1"></div>
+                <div class="swiper-slide"><img src="images/banner2.jpg" alt="banner2"></div>
+                <div class="swiper-slide"><img src="images/banner3.jpg" alt="banner3"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                spaceBetween: 0,
+                centeredSlides: true,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        </script>
+    </div>
+    <!--슬라이드 배너-->
+    <!--BEST seller-->
+    <h2>BEST seller</h2>
+    <div id="BEST_seller">
+        <div class="BEST_seller1">
+            <ul>
+                <li><a href="javascript:return false;"><img class="BEST_seller01" src="images/BEST_seller1.jpg" alt="BEST_seller1">
+                        <span class="BEST_s">BEST</span> <span class="BEST_ss">TOP</span>
+                        <p>HOT한 인기 상의!!</p>
+                        <div class="text">
+                            <h6><img src="images/look.png" alt="look"> 자세히 보기</h6>
+                        </div>
+                    </a></li>
+            </ul>
+        </div>
+        <div class="BEST_seller1">
+            <ul>
+                <li><a href="javascript:return false;"><img class="BEST_seller01" src="images/BEST_seller2.jpg" alt="BEST_seller2">
+                        <span class="BEST_s">BEST</span> <span class="BEST_ss">BOTTOM</span>
+                        <p>주문폭주 중인 하의!</p>
+                        <div class="text">
+                            <h6><img src="images/look.png" alt="look"> 자세히 보기</h6>
+                        </div>
+                    </a></li>
+            </ul>
+        </div>
+        <div class="BEST_seller1">
+            <ul>
+                <li><a href="javascript:return false;"><img class="BEST_seller01" src="images/BEST_seller3.jpg" alt="BEST_seller3">
+                        <span class="BEST_s">BEST</span> <span class="BEST_ss">HOME WEAR</span>
+                        <p>운동할 때, 잠깐 집 앞을 나설때도</p>
+                        <div class="text">
+                            <h6><img src="images/look.png" alt="look"> 자세히 보기</h6>
+                        </div>
+                    </a></li>
+            </ul>
+        </div>
+        <div class="BEST_seller0">
+            <ul>
+                <li><a href="javascript:return false;"><img class="BEST_seller02" src="images/BEST_seller4.jpg" alt="BEST_seller4">
+                        <span class="BEST_s">BEST</span> <span class="BEST_ss">SHOES/ACC</span>
+                        <p>당신을 빛나게 해줄 악세사리</p>
+                        <div class="text">
+                            <h6><img src="images/look.png" alt="look"> 자세히 보기</h6>
+                        </div>
+                    </a></li>
+            </ul>
+        </div>
+    </div>
+    <!--BEST seller-->
+    <!--NEW ARRIVAL-->
+    <h3>NEW ARRIVAL</h3>
+    <div id="NEW_ARRIVAL">
+        <div class="NEW_ARRIVAL0">
+            <!--1줄-->
+            <div class="NEW_ARRIVAL1">
+                <ul>
+                    <li>
+                        <p class="gif"><a href="javascript:return false;"><img  class="boom"
+                            src="images/boom.png" alt="boom"><img src="images/NEW_ARRIVAL_1.gif" alt="NEW_ARRIVAL_1"></p>
+                        <div class="text1">
+                            <p class="NEW_s0"> <span  class="NEW_s0c">
+                                <span class="color1"></span><span  class="color2"></span>
+                               </span></p>
+                            <span class="NEW_s">오프 숄더 티셔츠 </span><br>
+                            <p><span class="NEW_s1">31,500원</span><span class="NEW_s2"><del>35,000원</del></span></p>
+                            <span class="NEW_s3"> <span class="NEW_s30">5% 할인</span></span>
+                        </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="NEW_ARRIVAL1">
+                <ul>
+                    <li>
+                        <p class="gif"><a href="javascript:return false;"><img src="images/NEW_ARRIVAL_2.gif" alt="NEW_ARRIVAL_2"></p>
+                        <div class="text1">
+                            <p class="NEW_s0"> <span  class="NEW_c0" >
+                                <span class="color1"></span><span  class="color2"></span><span  class="color3"></span>
+                               </span></p>
+                            <span class="NEW_s">링클프리 데일리 셔츠</span><br>
+                            <p><span class="NEW_s1">35,910원</span><span class="NEW_s2"><del>37,800원</del></span></p>
+                            <span class="NEW_s3"> <span class="NEW_s30">5% 할인</span></span>
+                        </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="NEW_ARRIVAL1">
+                <ul>
+                    <li>
+                        <p class="gif"><a href="javascript:return false;"><img src="images/NEW_ARRIVAL_3.gif" alt="NEW_ARRIVAL_3"></p>
+                        <div class="text1">
+                            <p class="NEW_s0"> <span  class="NEW_c01">
+                                <span class="color1"></span><span  class="color2"></span><span  class="color3"></span>
+                               </span></p>
+                            <span class="NEW_s">퍼프 소매 반팔 티셔츠</span><br>
+                            <p><span class="NEW_s1">17,290원</span><span class="NEW_s2"><del>18,200원</del></span></p>
+                            <span class="NEW_s3"> <span class="NEW_s30">5% 할인</span></span>
+                        </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="NEW_ARRIVAL1_1">
+                <ul>
+                    <li>
+                        <p class="gif"><a href="javascript:return false;"><img src="images/NEW_ARRIVAL_4.gif" alt="NEW_ARRIVAL_4"></p>
+                        <div class="text1">
+                            <p class="NEW_s0"> <span class="NEW_c02" >
+                                <span class="color1"></span><span  class="color2"></span><span  class="color3"></span>
+                               </span></p>
+                            <span class="NEW_s">스판 슬림부츠컷 데님팬츠</span><br>
+                            <p><span class="NEW_s1">36,765원</span><span class="NEW_s2"><del>38,700원</del></span></p>
+                            <span class="NEW_s3"> <span class="NEW_s30">5% 할인</span></span>
+                        </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--2줄-->
+            <div class="NEW_ARRIVAL1">
+                <ul>
+                    <li>
+                        <p class="gif"><a href="javascript:return false;"><img src="images/NEW_ARRIVAL_5.gif" alt="NEW_ARRIVAL_5"></p>
+                        <div class="text1">
+                            <p class="NEW_s0"> <span class="NEW_c03"  >
+                                <span class="color1"></span><span  class="color2"></span><span  class="color3"></span>
+                               </span></p>
+                            <span class="NEW_s">반크롭 진주단추 더블자켓 블라우스</span><br>
+                            <p><span class="NEW_s1">44,820원</span><span class="NEW_s2"><del>49,800원</del></span></p>
+                            <span class="NEW_s3"> <span class="NEW_s30">10% 할인</span></span>
+                        </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="NEW_ARRIVAL1">
+                <ul>
+                    <li>
+                        <p class="gif"><a href="javascript:return false;"><img src="images/NEW_ARRIVAL_6.gif" alt="NEW_ARRIVAL_6"></p>
+                        <div class="text1">
+                            <p class="NEW_s0"><span   class="NEW_c04" >
+                                <span class="color1"></span><span  class="color2"></span><span  class="color3"></span>
+                                <span  class="color4"></span>
+                               </span></p>
+                            <span class="NEW_s">7부 소매 셔츠 카라 원피스</span><br>
+                            <p><span class="NEW_s1">56,700원</span><span class="NEW_s2"><del>63,000원</del></span></p>
+                            <span class="NEW_s3"> <span class="NEW_s30">10% 할인</span></span>
+                        </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="NEW_ARRIVAL1">
+                <ul>
+                    <li>
+                        <p class="gif"><a href="javascript:return false;"><img  class="boom"
+                            src="images/boom.png" alt="boom"><img src="images/NEW_ARRIVAL_7.gif" alt="NEW_ARRIVAL_7"></p>
+                        <div class="text1">
+                            <p class="NEW_s0"> <span class="NEW_c05">
+                                <span class="color1"></span><span  class="color2"></span><span  class="color3"></span>
+                               </span></p>
+                            <span class="NEW_s">크롭 자켓과 A라인 미니스커트 투피스set</span><br>
+                            <p><span class="NEW_s1">108,800원</span><span class="NEW_s2"><del>128,000원</del></span></p>
+                            <span class="NEW_s3"> <span class="NEW_s30">15% 할인</span></span>
+                        </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="NEW_ARRIVAL1_1">
+                <ul>
+                    <li>
+                        <p class="gif"><a href="javascript:return false;"><img src="images/NEW_ARRIVAL_8.gif" alt="NEW_ARRIVAL_8"></p>
+                        <div class="text1">
+                            <p class="NEW_s0"> <span  class="NEW_c06" >
+                                <span class="color1"></span>
+                               </span></p>
+                            <span class="NEW_s">딜라잇 레터링 맨투맨</span><br>
+                            <p><span class="NEW_s1">25,460원</span><span class="NEW_s2"><del>26,800원</del></span></p>
+                            <span class="NEW_s3"> <span class="NEW_s30">5% 할인</span></span>
+                        </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--3줄-->
+            <div class="NEW_ARRIVAL1">
+                <ul>
+                    <li>
+                        <p class="gif"><a href="javascript:return false;"><img src="images/NEW_ARRIVAL_9.gif" alt="NEW_ARRIVAL_9"></p>
+                        <div class="text1">
+                            <p class="NEW_s0"> <span  class="NEW_c07" >
+                                <span class="color1"></span>
+                               </span></p>
+                            <span class="NEW_s">소매배색 퍼프 미니원피스</span><br>
+                            <p><span class="NEW_s1">38,080원</span><span class="NEW_s2"><del>44,800원</del></span></p>
+                            <span class="NEW_s3"> <span class="NEW_s30">15% 할인</span></span>
+                        </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="NEW_ARRIVAL1">
+                <ul>
+                    <li>
+                        <p class="gif"><a href="javascript:return false;"><img src="images/NEW_ARRIVAL_10.gif" alt="NEW_ARRIVAL_10"></p>
+                        <div class="text1">
+                            <p class="NEW_s0"> <span class="NEW_c08" >
+                                <span class="color1"></span><span  class="color2"></span><span  class="color3"></span>
+                               </span></p>
+                            <span class="NEW_s">크롭 청자켓</span><br>
+                            <p><span class="NEW_s1">53,820원</span><span class="NEW_s2"><del>59,800 원</del></span></p>
+                            <span class="NEW_s3"> <span class="NEW_s30">10% 할인</span></span>
+                        </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="NEW_ARRIVAL1">
+                <ul>
+                    <li>
+                        <p class="gif"><a href="javascript:return false;"><img src="images/NEW_ARRIVAL_11.gif" alt="NEW_ARRIVAL_11"></p>
+                        <div class="text1">
+                            <p class="NEW_s0"> <span  class="NEW_c09" >
+                                <span class="color1"></span><span  class="color2"></span><span  class="color3"></span>
+                               </span></p>
+                            <span class="NEW_s">프렌즈 나염반팔티</span><br>
+                            <p><span class="NEW_s1">14,250원</span><span class="NEW_s2"><del>15,000원</del></span></p>
+                            <span class="NEW_s3"> <span class="NEW_s30">5% 할인</span></span>
+                        </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="NEW_ARRIVAL1_1">
+                <ul>
+                    <li>
+                        <p class="gif"><a href="javascript:return false;"><img src="images/NEW_ARRIVAL_12.gif" alt="NEW_ARRIVAL_12"></p>
+                        <div class="text1">
+                            <p class="NEW_s0"> <span  class="NEW_c010">
+                                <span class="color1"></span><span  class="color2"></span><span  class="color3"></span>
+                               </span></p>
+                            <span class="NEW_s">맨투맨 팬츠세트</span><br>
+                            <p><span class="NEW_s1">32,300원</span><span class="NEW_s2"><del>34,000원</del></span></p>
+                            <span class="NEW_s3"> <span class="NEW_s30">5% 할인</span></span>
+                            
+                        </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+
+        </div>
+
+    </div>
+    <!--NEW ARRIVAL-->
+    <!--WEEKLY BEST-->
+    <div id="WEEKLY_BEST">
+        <div id="WEEKLY_BEST_inner">
+          
+            <h4>WEEKLY BEST</h4>
+            <p class="p">주문이 제일 많은 제품!! <img class="fire" src="images/fire.png" alt="fire"></p>
+            <ul class="ul">
+                <li class="li"><a href="javascript:return false;">TOP</a></li>
+                <li><a href="javascript:return false;">｜</a></li>
+                <li class="li"><a href="javascript:return false;">BOTTOM</a></li>
+                <li><a href="javascript:return false;">｜</a></li>
+                <li class="li"><a href="javascript:return false;">DRESS</a></li>
+                <li><a href="javascript:return false;">｜</a></li>
+                <li class="li"><a href="javascript:return false;">HOME WEAR</a></li>
+                <li><a href="javascript:return false;">｜</a></li>
+                <li class="li"><a href="javascript:return false;">OUTER</a></li>
+                <li><a href="javascript:return false;">｜</a></li>
+                <li class="li"><a href="javascript:return false;">SHOES/ACC</a></li>
+            </ul>
+            <div id="WEEKLY_BEST_inners">
+            <div class="WEEKLY_box0">
+                
+                <ul>
+                    <li>
+                       <a href="javascript:return false;"> <img class="WEEKLY1" src="images/WEEKLY1.jpg" alt="WEEKLY1"></a>
+                    <div class="tx1">
+                        <p><span class="no1">[순위 상승중!!]</span>리본 블라우스</p>
+                                
+                        <p class="p1"><del>35,000원</del><span class="span1"> 31,590원</span></p>
+                        <span class="p2">무료배송</span><span class="span2">10% 할인</span>
+                    </div> 
+                
+            </li>
+                </ul>
+            </div>  
+            <div class="WEEKLY_box0">
+                
+                <ul>
+                    <li>
+                       <a href="javascript:return false;"> <img class="WEEKLY1" src="images/WEEKLY1_2.jpg" alt="WEEKLY1_2">  </a>
+                    <div class="tx1">
+                        <p><span class="no1">[순위 상승중!!] </span>멜빵 점프수트</p>
+                                
+                        <p class="p1"><del>26,000원</del><span class="span1"> 22,100원</span></p>
+                        <span class="p2">무료배송</span><span class="span2">15% 할인</span>
+                    </div> 
+              
+            </li>
+                </ul>
+            </div>  
+            <div class="WEEKLY_box0">
+                
+                <ul>
+                    <li>
+                        <a href="javascript:return false;"> <img class="WEEKLY1" src="images/WEEKLY1_3.jpg" alt="WEEKLY1_3"> </a>
+                    <div class="tx1">
+                        <p><span class="no1">[순위 상승중!!] </span>멜티드 트위드 가디건</p>
+                                
+                        <p class="p1"><del>37,800원</del><span class="span1"> 34,020원</span></p>
+                        <span class="p2">무료배송</span><span class="span2">10% 할인</span>
+                    </div> 
+               
+            </li>
+                </ul>
+            </div>  
+            <div class="WEEKLY_box00">
+                
+                <ul>
+                    <li>
+                        <img class="boom" src="images/Sold Out.png" alt="Reset"> <a href="javascript:return false;"> <img class="WEEKLY1" src="images/WEEKLY1_4.jpg" alt="WEEKLY1_4">   </a>
+                    <div class="tx1">
+                        <p><span class="no1">[Sold Out] </span>
+                            소누 니트 배색 원피스</p>
+                                
+                        <p class="p1"><del>41,800원</del><span class="span1"> 33,440원</span></p>
+                        <span class="p2">무료배송</span><span class="span2">20% 할인</span>
+                    </div> 
+             
+            </li>
+                </ul>
+            </div>  
+            <div class="WEEKLY_box0">
+                
+                <ul>
+                    <li>
+                        <img class="boom" src="images/Reset.png" alt="Reset"><a href="javascript:return false;"> <img class="WEEKLY1" src="images/WEEKLY2.jpg" alt="WEEKLY2"></a>
+                    <div class="tx1">
+                        <p><span class="no1">[재입고!!] </span>하엘드 브이넥 크롭 니트</p>
+                                
+                        <p class="p1"><del>32,000원</del><span class="span1"> 30,400원</span></p>
+                        <span class="p2">무료배송</span><span class="span2">5% 할인</span>
+                    </div> 
+                
+            </li>
+                </ul>
+            </div>  
+            <div class="WEEKLY_box0">
+                
+                <ul>
+                    <li>
+                        <a href="javascript:return false;"><img class="WEEKLY1" src="images/WEEKLY2_2.jpg" alt="WEEKLY2_2"> </a>
+                    <div class="tx1">
+                        <p><span class="no1">[순위 상승중!!] </span>포켓 모던 블라우스</p>
+                                
+                        <p class="p1"><del>58,200원</del><span class="span1"> 52,380원</span></p>
+                        <span class="p2">무료배송</span><span class="span2">10% 할인</span>
+                    </div> 
+               
+            </li>
+                </ul>
+            </div>   
+            <div class="WEEKLY_box0">
+                
+                <ul>
+                    <li>
+                        <img class="boom" src="images/Reset.png" alt="Reset">  <a href="javascript:return false;"> <img class="WEEKLY1" src="images/WEEKLY2_3.jpg" alt="WEEKLY2_3">  </a>
+                    <div class="tx1">
+                        <p><span class="no1">[재입고!!] </span>웬즈 사선 블라우스</p>
+                                
+                        <p class="p1"><del>35,100원</del><span class="span1"> 31,590원</span></p>
+                        <span class="p2">무료배송</span><span class="span2">10% 할인</span>
+                    </div> 
+              
+            </li>
+                </ul>
+            </div>
+            <div class="WEEKLY_box00">
+                
+                <ul>
+                    <li>
+                      <a href="javascript:return false;"> <img class="WEEKLY1" src="images/WEEKLY2_4.jpg" alt="WEEKLY2_4">  </a>
+                    <div class="tx1">
+                        <p><span class="no1">[순위 상승중!!] </span>벨라오프숄더 블라우스</p>
+                                
+                        <p class="p1"><del>38,200원</del><span class="span1"> 32,470원</span></p>
+                        <span class="p2">무료배송</span><span class="span2">10% 할인</span>
+                    </div> 
+              
+            </li>
+                </ul>
+            </div>
+            </div>  
+        </div>  
+    </div>  
+    <!--WEEKLY BEST-->
+ 
+    <!--미니 슬라이드 배너-->
+    <div id="minibanner"><!--배너-->
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/mini_ba01.jpg" alt="mini_ba01"></div>
+                <div class="swiper-slide"><img src="images/mini_ba02.jpg" alt="mini_ba02"></div>
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                spaceBetween: 0,
+                centeredSlides: true,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        </script>
+    </div><!--배너-->
+
+    <!--미니 슬라이드 배너-->
+
+    <!--리뷰 후기-->
+    <div class="BEST_REVIEW">
+        <img src="images/stars.jpg" alt="stars">
+        <h5>BEST REVIEW</h5>
+        <p>@jamie_official</p>
+        <div class="REVIEW_box">
+            <ul>
+                <li><a href="javascript:return false;"><img src="images/REVIEW_1_1.jpg" alt="REVIEW_1_1"></a></li>
+                <li><a href="javascript:return false;"><img src="images/REVIEW_1_2.jpg" alt="REVIEW_1_2"></a></li>
+                <li><a href="javascript:return false;"><img src="images/REVIEW_1_3.jpg" alt="REVIEW_1_3"></a></li>
+                <li><a href="javascript:return false;"><img src="images/REVIEW_1_4.jpg" alt="REVIEW_1_4"></a></li>
+                <li class="REVIEW_boxsub1"><a href="javascript:return false;"><img src="images/REVIEW_1_5.jpg" alt="REVIEW_1_5"></a></li>
+            </ul>
+        </div>
+        <div class="REVIEW_box">
+            <ul>
+                <li><a href="javascript:return false;"><img src="images/REVIEW_2_1.jpg" alt="REVIEW_2_1"></a></li>
+                <li><a href="javascript:return false;"><img src="images/REVIEW_2_2.jpg" alt="REVIEW_2_2"></a></li>
+                <li><a href="javascript:return false;"><img src="images/REVIEW_2_3.jpg" alt="REVIEW_2_3"></a></li>
+                <li><a href="javascript:return false;"><img src="images/REVIEW_2_4.jpg" alt="REVIEW_2_4"></a></li>
+                <li class="REVIEW_boxsub1"><a href="javascript:return false;"><img src="images/REVIEW_2_5.jpg" alt="REVIEW_2_5"></a></li>
+            </ul>
+        </div>
+    </div>
+    <!--리뷰 후기-->
+    <!--푸터-->
+    <div id="footer">
+        <div class="footer_inner">
+            <div class="INFORMATION">
+                <ul>
+                    <li class="ln"><a href="javascript:return false;">INFORMATION</a></li>
+                    <li class="li"><a href="javascript:return false;">(주)경밝음 대표. 문경빈</a></li>
+                    <li class="li"><a href="javascript:return false;">사업자 등록번호 : 120-094038</a></li>
+                    <li class="li"><a href="javascript:return false;">부산광역시 부산진구 중앙대로 111-6</a></li>
+                    <li class="li"><a href="javascript:return false;">통신판매업신고 : 제 2023-부산진구-03680</a></li>
+                </ul>
+
+            </div>
+            <div class="CS_CENTER">
+                <ul>
+                    <li class="ln"><a href="javascript:return false;">C/S CENTER</a></li>
+                    <li class="li"><a href="javascript:return false;">대표번호 : 051 - 321 - 9521</a></li>
+                    <li class="li"><a href="javascript:return false;">대표 이메일 : jamie@naver.com</a></li>
+                    <li class="li"><a href="javascript:return false;">평일 9:00~17:40 / 점심 13:00~14:00 </a></li>
+                    <li class="li"><a href="javascript:return false;">(토,일,공휴일 휴무)</a></li>
+                </ul>
+
+            </div>
+            <div class="Exchange">
+                <ul>
+                    <li class="ln"><a href="javascript:return false;">[교환/반품 주소]</a></li>
+                    <li class="li"><a href="javascript:return false;">부산광역시 부산진구 중앙대로 111-6</a></li>
+                    <li class="li"><a href="javascript:return false;">한진택배 고객센터 : 1588-0011 / 1544-0011</a></li>
+                    <li class="small"><a href="javascript:return false;">*반품사항이 있을경우 상담 후 안내절차에 따라 지정 택배사로 반품요청 부탁드립니다.</a></li>
+                </ul>
+
+            </div>
+            <div class="sns">
+                <p class="ln">[SNS]</p>
+                <ul>
+
+                    <li class="ln"><a href="javascript:return false;"><img src="images/inster.png" alt="inster"></a></li>
+                    <li><a href="javascript:return false;"><img src="images/youtube_fot.png" alt="youtube_fot"></a></li>
+                    <li><a href="javascript:return false;"><img src="images/talk.png" alt="talk"></a></li>
+
+                </ul>
+
+            </div>
+
+        </div>
+        <!--푸터 하단-->
+        <div class="footer_innerin">
+
+            <ul>
+                <li><a href="javascript:return false;">홈</a></li>
+                <li><a href="javascript:return false;">｜</a></li>
+                <li><a href="javascript:return false;">회사소개</a></li>
+                <li><a href="javascript:return false;">｜</a></li>
+                <li><a href="javascript:return false;">이용약관</a></li>
+                <li><a href="javascript:return false;">｜</a></li>
+                <li><a href="javascript:return false;">개인정보취급방침</a></li>
+                <li><a href="javascript:return false;">｜</a></li>
+                <li><a href="javascript:return false;">이용안내</a></li>
+            </ul>
+            <p class="all">2023 All copyrights are by GitHub.</p>
+        </div>
+        <!--푸터 하단-->
+
+    </div>
+    <!--푸터-->
+</body>
+
+</html>
